@@ -18,7 +18,7 @@
 
 <body>
 
-<div class="container-fluid d-none d-lg-block   ">
+<div class="container-fluid forside-background d-none d-lg-block d-md-block">
 	<div class="sidenav text-center ">
 
 		<div class="forside justify-content-center d-flex">
@@ -101,24 +101,29 @@
 
 	</div>
 
-	<div class="main">
-		Hej
+	<div class="main main-forsidebackg d-block">
+		<img src="images/forside-background-blur.png" style="width: 100%; object-fit: cover">
 	</div>
 </div>
 
-<div class="container-fluid d-lg-none d-sm-block">
+<div class="container-fluid d-lg-none d-sm-block bg-dark shadow">
 	<div id="myNav" class="overlay">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/Group%202.svg" style="width: 40%; padding-right: 2px;"></a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 40%; color: white; !important; "></a>
 		<div class="overlay-content">
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
+			<a class="zeekergul" href="#"><strong>Forside</strong></a>
+			<a href="#">Opret opgave</a>
+			<a href="#">Om os</a>
+			<a href="#">Log ind</a>
+			<div class="mobile-menu-social justify-content-center d-flex pt-5">
+				<i class="fa-brands fa-facebook text-white p-3"></i>
+				<i class="fa-brands fa-linkedin text-white p-3"></i>
+			</div>
 		</div>
+
 	</div>
 
 
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="images/bar.svg" style="width: 20%; padding: 15px "></span>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="white-bar" src="images/white-bar.png" style="width: 20%; padding: 15px "></span>
 
 	<script>
 		function openNav() {

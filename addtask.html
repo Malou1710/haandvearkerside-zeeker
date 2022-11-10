@@ -128,8 +128,17 @@
   </div>
 
   <!--	Background-picture on homepage/forside -->
-  <div class="main main-forsidebackg d-block">
-    <img src="images/forside-background-blur.png" style="width: 100%; object-fit: cover">
+  <div class="main d-block p-5">
+    <div class="container d-flex justify-content-center col-12">
+      <form>
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
@@ -178,6 +187,11 @@
   <!--	Same "forside"-background, but in phone-version - therefor smaller in size -->
   <img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: fill">
 
+</div>
+
+<div class="form__group field">
+  <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+  <label for="name" class="form__label">Name</label>
 </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

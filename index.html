@@ -48,14 +48,14 @@
 		<div class="forside pt-4 ">
 			<div class="justify-content-center d-flex">
 <!--				Round button + link around house-icon -->
-				<a class="rounded-button" href="#">
+				<a class="rounded-button" href="index.html">
 					<i class="fa-solid fa-house zeekerblue"></i>
 				</a>
 			</div>
 <!--			Link-tag -->
-			<a class="p-2" href="#">
+			<a class="p-2" href="index.html">
 <!--				Text under button (in Zeeker-yellow-color) -->
-				<p class="zeekergul page"><strong>Forside</strong></p>
+				<p class="zeekeryellow page"><strong>Forside</strong></p>
 			</a>
 		</div>
 
@@ -63,12 +63,12 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 <!--				Round button + link around plus-icon -->
-				<a class="rounded-button" href="#">
+				<a class="rounded-button" href="addtask.html">
 					<i class="fa-solid fa-plus zeekerblue"></i>
 				</a>
 			</div>
 <!--			Link-tag -->
-			<a class="p-2" href="#">
+			<a class="p-2" href="addtask.html">
 <!--				Text under button -->
 				<p class="zeekerblue page">OPRET OPGAVE</p>
 			</a>
@@ -78,12 +78,12 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 <!--				Round button + link around info-icon -->
-				<a class="rounded-button" href="#">
+				<a class="rounded-button" href="aboutus.html">
 					<i class="fa-solid fa-info zeekerblue"></i>
 				</a>
 			</div>
 <!--			Link-tag -->
-			<a class="p-2" href="#">
+			<a class="p-2" href="aboutus.html">
 <!--				Text under button -->
 				<p class="zeekerblue page">Om os</p>
 			</a>
@@ -93,12 +93,12 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 <!--				Round button + link around profile-icon -->
-				<a class="rounded-button" href="#">
+				<a class="rounded-button" href="login.html">
 					<i class="fa-solid fa-user zeekerblue"></i>
 				</a>
 			</div>
 <!--			Link-tag -->
-			<a class="p-2" href="#">
+			<a class="p-2" href="login.html">
 <!--				Text under button -->
 				<p class="zeekerblue page">Log ind</p>
 			</a>
@@ -128,34 +128,57 @@
 	</div>
 
 <!--	Background-picture on homepage/forside -->
-	<div class="main main-forsidebackg d-block">
-		<img src="images/forside-background-blur.png" style="width: 100%; object-fit: cover">
+	<div class="main d-block text-center">
+		<div class="main-forsidebackg">
+			<img src="images/forside-background-blur.png">
+		</div>
+		<div class="forside-h1 text-white zeekeryellow">HÅNDVÆRKERSIDEN</div>
+		<div class="knapper">
+			<div class="text-white text-center">
+				<div class="yellow-btn-text">
+					Mangler du hjælp til <br> at udføre dit arbejde?
+				</div>
+				<div class="yellow-btn text-center align-content-center">
+					<h5 class="yellow zeekerblue">Opret opgave</h5>
+				</div>
+
+
+				</div>
+			</div>
+
+
+		</div>
+
 	</div>
 </div>
 
 <!-- Hamburger navigation-menu (full screen) - visible on phone - not visible on desktop or tablet -->
-<div class="container-fluid d-lg-none d-sm-block bg-dark shadow">
+<div class="container-fluid d-lg-none d-sm-block bg-dark zeekergrey shadow">
 <!--	Zeeker-blue overlay-box -->
 	<div id="myNav" class="overlay">
 <!--		The white cross-icon - svg-file -->
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 40%; color: white; !important; "></a>
 		<div class="overlay-content">
 <!--			Text-links on hamburger navigation-menu -->
-			<a class="zeekergul" href="#"><strong>Forside</strong></a>
-			<a href="#">Opret opgave</a>
-			<a href="#">Om os</a>
-			<a href="#">Log ind</a>
+			<a class="zeekeryellow" href="index.html"><strong>Forside</strong></a>
+			<a href="addtask.html">Opret opgave</a>
+			<a href="aboutus.html">Om os</a>
+			<a href="login.html">Log ind</a>
 <!--			Social media-icons on hamburger navigation-menu -->
 			<div class="mobile-menu-social justify-content-center d-flex pt-5">
-				<i class="fa-brands fa-facebook text-white p-3"></i>
-				<i class="fa-brands fa-linkedin text-white p-3"></i>
+				<a href="https://www.facebook.com/zeekerdk/" target="_blank">
+					<i class="fa-brands fa-facebook text-white p-3"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/zeekerdk/?originalSubdomain=dk" target="_blank">
+					<i class="fa-brands fa-linkedin text-white p-3"></i>
+				</a>
 			</div>
 		</div>
 
 	</div>
 
 <!-- The white hamburger navigation-bar - svg-file -->
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="white-bar" src="images/white-bar.png" style="width: 20%; padding: 15px "></span>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="white-bar" src="images/white-bar.png" style="width: 20%; padding: 15px; margin-right: 60px !important; "></span>
 
 <!--	Javascript for the opening and the closing of the hamburger navigation-bar -->
 	<script>
@@ -170,7 +193,7 @@
 </div>
 
 <!-- Homepage for phone-version - only visible on phone -->
-<div class="container-fluid d-sm-block d-lg-none d-md-none">
+<div class="container-fluid homepage d-sm-block d-lg-none d-md-none">
 <!--	Same "forside"-background, but in phone-version - therefor smaller in size -->
 		<img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: fill">
 

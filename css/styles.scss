@@ -37,13 +37,11 @@ img {
 	height: auto;
 }
 
-.forside-background{
-	background-image: url("images/forside-background-blur.png");
-}
 
 
-// Mobil - Fullscreen navbar
+// PHONE - FULLSCREEN HAMBURGER NAVIGATION-MENU
 
+// The fullscreen navigation-menu
 .overlay {
 	height: 100%;
 	width: 0;
@@ -59,7 +57,7 @@ img {
 }
 
 
-
+// The text-part of 'overlay'
 .overlay-content {
 	position: relative;
 	top: 25%;
@@ -68,6 +66,7 @@ img {
 	margin-top: 30px;
 }
 
+// Links for the text on 'overlay'
 .overlay a {
 	padding: 8px;
 	text-decoration: none;
@@ -77,10 +76,9 @@ img {
 	transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-	color: #f1f1f1;
-}
+//
 
+// The cross/closing button on 'overlay'
 .overlay .closebtn {
 	position: absolute;
 	top: 20px;
@@ -90,9 +88,6 @@ img {
 
 
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
 
 /* Toggle Styles */
@@ -112,6 +107,7 @@ img {
 }
 
 /* Sidebar Styles */
+
 
 .sidenav {
 	height: 100%;
@@ -180,8 +176,8 @@ img {
 }
 
 .rounded-button-logo{
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 160px;
 	background: #fff;
 	color: white;
 	display: inline-flex;
@@ -220,6 +216,14 @@ img {
 	font-size: 35px;
 }
 
+.shadow-sm{
+	box-shadow: 0px 0rem 1rem 1px #2125297a !important;
+}
+
+.navbar{
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+}
 
 
 
@@ -233,26 +237,107 @@ img {
 }
 
 .zeekergrey{
-	background-color: #D4D2D2;
+	background-color: #D4D2D2 !important;
+}
+
+.craftsman-hamburger{
+	font-family: Raleway, sans-serif;
+	font-weight: bolder;
+	color: #395374;
+	margin-left: -100px;
+	padding-left: 40px;
+	padding-right: 20px;
+	font-size: 22px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.user-phone{
+	padding-left: 20px;
+}
+
+.zeeker-gray{
+	background-color: #F7F7F7;
 }
 
 
 
-.white-bar{
-	margin-right: 10px;
-}
+
 
 .main-forsidebackg{
 	position: relative;
+	height: 50%;
+	max-width: 100%;
+
 }
+
+//test
+.wrapper1 {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	font-family: Raleway, sans-serif;
+	font-weight: normal !important;
+}
+
+.wrapper2 {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	padding: 50px;
+}
+
+.h2-button{
+	font-size: 30px;
+	font-weight: normal;
+	padding: 50px;
+}
+
+.wrapper2 button{
+	padding: 10px 80px 0 0;
+}
+
+.button-text{
+	padding: 10px 50px !important;
+	background-color: #F0B713;
+	border: none;
+	margin-right: 40px;
+
+}
+.button-text-facebook{
+	padding: 10px 50px !important;
+	background-color: #395374;
+	border: none;
+	margin-left: 60px;
+}
+//test
 
 .forside-h1{
 	position: absolute;
 	top: 80px;
-	left: 420px;
-	width: 100%;
+	left: 340px;
 	margin: 0 auto;
 	width: 300px;
+	font-family: Raleway, sans-serif;
+	font-size: 50px;
+	font-weight: bolder;
+
+}
+
+button{
+	border-radius: 50px;
+}
+
+.forside-h1-about{
+	width: 800px;
 	height: 50px;
 	font-family: Raleway, sans-serif;
 	font-size: 50px;
@@ -260,37 +345,49 @@ img {
 
 }
 
-.knapper{
-	position: absolute;
-	top: 300px;
-	left: 320px;
-	margin: 0 auto;
-	height: 50px;
-	font-family: Raleway, sans-serif;
-	font-size: 40px;
-	font-weight: normal;
-
-}
 
 .yellow-btn{
 	position: absolute;
-	height: 68px;
+	height: 45px;
 	width: 250px;
 	left: 25px;
 	margin: 0 auto;
-	height: 50px;
 	font-family: Raleway, sans-serif;
-	font-size: 40px;
 	font-weight: normal;
 	background-color: #F0B713;
 	border-radius: 50px;
-
 }
 
 .yellow{
 	margin-top: 10px;
 	font-weight: normal;
 }
+
+
+.main {
+	margin-left: 150px; /* Same as the width of the sidenav */
+	font-size: 28px; /* Increased text to enable scrolling */
+	margin-right: -15px;
+}
+
+
+.main-forsidebackg .btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #555;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+
 
 
 

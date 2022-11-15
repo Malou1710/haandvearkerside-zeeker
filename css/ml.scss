@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: inherit;
+}
+
+ul, ol {
+  margin: 2px 10px 2px 10px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  font-family: Raleway, sans-serif;
+  font-weight: bolder;
+
+}
+
+
+
+// PHONE - FULLSCREEN HAMBURGER NAVIGATION-MENU
+
+// The fullscreen navigation-menu
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #395374;
+  overflow-x: hidden;
+  transition: 0.4s;
+  opacity: 100%;
+  font-family: Raleway, sans-serif;
+}
+
+
+// The text-part of 'overlay'
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+// Links for the text on 'overlay'
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+//
+
+// The cross/closing button on 'overlay'
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  font-size: 60px;
+}
+
+
+
+
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  padding-top: 20px;
+  //filter: drop-shadow(0px 3px 6px);
+  filter: drop-shadow(0px 0.5px 0.9px #949494);
+}
+
+.sidenav a {
+  padding: 17px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  font-family: Raleway, sans-serif;
+  color: inherit;
+}
+
+//.sidenav a:hover {
+//	color: #f1f1f1;
+//}
+
+.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  margin-right: -15px;
+}
+
+
+
+
+
+//.forside-back {
+//	/* The image used */
+//	background-image: url("images/forside-background.jpeg");
+//
+//	/* Full height */
+//	height: 100%;
+//
+//	/* Center and scale the image nicely */
+//	background-position: center;
+//	background-repeat: no-repeat;
+//	background-size: cover;
+//}
+.rounded-button{
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: white;
+  filter: drop-shadow(0px 0.5px 0.9px #949494);
+}
+
+.rounded-button:hover{
+  background: #f3f3f3;
+  transition: 2ms ease-in-out;
+}
+
+.rounded-button-logo{
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0.5px 0.9px #949494);
+}
+
+.socialmedia{
+  margin-top: 35px;
+}
+
+.fa-info{
+  font-size: 25px;
+}
+
+.fa-house{
+  font-size: 25px;
+}
+
+.fa-plus{
+  font-size: 25px;
+}
+
+.fa-user{
+  font-size: 25px;
+}
+
+.fa-facebook{
+  font-size: 35px;
+}
+
+.fa-linkedin{
+  font-size: 35px;
+}
+
+.shadow-sm{
+  box-shadow: 0px 0rem 1rem 1px #2125297a !important;
+}
+
+.navbar{
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+
+
+// FARVER - fordi at de dumme bootstrap freaking ikke gider at VIRKE!
+.zeekeryellow{
+  color: #f0b713 !important;
+}
+
+.zeekerblue{
+  color: #395374;
+}
+
+.zeekergrey{
+  background-color: #D4D2D2 !important;
+}
+
+.craftsman-hamburger{
+  font-family: Raleway, sans-serif;
+  font-weight: bolder;
+  color: #395374;
+  margin-left: -100px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 22px;
+}
+
+.user-phone{
+  padding-left: 20px;
+}
+
+.zeeker-gray{
+  background-color: #F7F7F7;
+}
+
+
+
+
+
+.main-forsidebackg{
+  position: relative;
+  height: 50%;
+  max-width: 100%;
+
+}
+
+//test
+.wrapper1 {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-family: Raleway, sans-serif;
+  font-weight: normal !important;
+}
+
+.wrapper2 {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  padding: 50px;
+}
+
+.h2-button{
+  font-size: 30px;
+  font-weight: normal;
+  padding: 50px;
+}
+
+.wrapper2 button{
+  padding: 10px 80px 0 0;
+}
+
+.button-text{
+  padding: 10px 50px !important;
+  background-color: #F0B713;
+  border: none;
+  margin-right: 40px;
+}
+
+.button-text:hover{
+  background-color: #d8a510;
+  color: #304864;
+}
+.button-text-facebook{
+  padding: 10px 50px !important;
+  background-color: #395374;
+  border: none;
+  margin-left: 60px;
+}
+
+.button-text-facebook:hover{
+  background-color: #304864;
+  color: #F0B713;
+}
+//test
+
+.forside-h1{
+  position: absolute;
+  top: 80px;
+  left: 340px;
+  margin: 0 auto;
+  width: 300px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+
+}
+
+button{
+  border-radius: 50px;
+}
+
+.forside-h1-about{
+  width: 800px;
+  height: 50px;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+
+}
+
+
+.yellow-btn{
+  position: absolute;
+  height: 45px;
+  width: 250px;
+  left: 25px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  background-color: #F0B713;
+  border-radius: 50px;
+}
+
+.yellow{
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+
+.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  margin-right: -15px;
+}
+
+
+.main-forsidebackg .btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+// customized scrollbar on all four pages
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F7F7F7;
+}

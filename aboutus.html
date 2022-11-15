@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
 
-  <title>FORSIDE - Zeeker</title>
+  <title>Om håndværkersiden</title>
 
   <meta name="robots" content="All">
   <meta name="author" content="Udgiver">
   <meta name="copyright" content="Information om copyright">
 
+  <link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
@@ -70,7 +71,7 @@
       <!--			Link-tag -->
       <a class="p-2" href="addtask.html">
         <!--				Text under button -->
-        <p class="zeekerblue page">OPRET OPGAVE</p>
+        <p class="zeekerblue page">Oprer opgave</p>
       </a>
     </div>
 
@@ -79,7 +80,7 @@
       <div class="justify-content-center d-flex">
         <!--				Round button + link around info-icon -->
         <a class="rounded-button" href="aboutus.html">
-          <i class="fa-solid fa-info zeekerblue"></i>
+          <i class="fa-solid fa-info zeekeryellow"></i>
         </a>
       </div>
       <!--			Link-tag -->
@@ -128,26 +129,58 @@
   </div>
 
   <!--	Background-picture on homepage/forside -->
-  <div class="main main-forsidebackg d-block">
-    <img src="images/forside-background-blur.png" style="width: 100%; object-fit: cover">
+  <div class="main d-block">
+    <div class=" container">
+      <h1 class="text-center p-3">OM HÅNDVÆRKERSIDEN</h1>
+      <div class="row d-flex justify-content-evenly align-items-end align-items-md-center flex-row-reverse">
+        <div class="col-md-6 box1 mt-3 pt-5">
+          <h2>Hvad er Håndværkersiden?</h2>
+          <p class="lille_tekst pt-5 pb-1">
+            Håndværkersiden er et fællesskab bestående af ca. 17.000 håndværkere
+            der dagligt sparer med hinanden og rådgiver kunder.
+            <br><br>
+            I vores netværk er der ingen mellemmand, som gør det dyrere
+            for håndværkerne og kunderne at aftale priser.
+            <br><br>
+            På Håndværkersiden.dk formidler vi ganske
+            simpelt kontakt mellem håndværkere og kunder.
+            <br><br>
+            Det gør det nemt for kunden at finde
+            en ledig håndværker med de rette kompetencer,
+            og nemt for håndværkeren at finde arbejde.
+            <br><br>
+            </p>
+            <button class="knap3 text-center mb-5">Opret opgave</button>
+        </div>
+
+        <!-- Ydre Boks -->
+        <div class=" col-md-6 mt-5 pb-2 ">
+          <div class="mt-2 p-3 mb-2 row">
+            <!-- Billede -->
+            <img class="d-none d-lg-block" src="images/Group%2058.png" alt="">
+            <img class="d-lg-none" src="images/mobil_håndværker.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- Hamburger navigation-menu (full screen) - visible on phone - not visible on desktop or tablet -->
-<div class="container-fluid d-lg-none d-sm-block bg-dark shadow">
+<div class="container-fluid disabled d-lg-none d-md-none d-sm-block zeeker-gray navbar shadow-sm">
   <!--	Zeeker-blue overlay-box -->
   <div id="myNav" class="overlay">
     <!--		The white cross-icon - svg-file -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 40%; color: white; !important; "></a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 35%; color: white; !important; "></a>
     <div class="overlay-content">
       <!--			Text-links on hamburger navigation-menu -->
-      <a href="index.html">Forside</a>
-      <a href="addtask.html">OPRET OPGAVE</a>
-      <a class="zeekeryellow" href="aboutus.html"><strong>Om os</strong></a>
+      <a class="zeekeryellow" href="index.html"><strong>Forside</strong></a>
+      <a href="addtask.html">Opret opgave</a>
+      <a href="aboutus.html">Om os</a>
       <a href="login.html">Log ind</a>
       <!--			Social media-icons on hamburger navigation-menu -->
       <div class="mobile-menu-social justify-content-center d-flex pt-5">
-        <a href="https://www.facebook.com/zeekerdk/" target="_blank">
+        <a href="https://www.facebook.com/groups/740535275977723/" target="_blank">
           <i class="fa-brands fa-facebook text-white p-3"></i>
         </a>
         <a href="https://www.linkedin.com/company/zeekerdk/?originalSubdomain=dk" target="_blank">
@@ -159,7 +192,17 @@
   </div>
 
   <!-- The white hamburger navigation-bar - svg-file -->
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="white-bar" src="images/white-bar.png" style="width: 20%; padding: 15px "></span>
+  <div class="navbar justify-content-center d-flex text-center">
+		<span style="cursor:pointer" onclick="openNav()">
+			<img class="blue-bar" src="images/blue-bar.png" style="width: 45%; padding: 15px; margin-right: -10px !important; ">
+		</span>
+    <a href="index.html">
+      <h4 class="craftsman-hamburger p-sm-5 text-center">HÅNDVÆRKERSIDEN</h4>
+    </a>
+    <a href="login.html">
+      <i class="user-phone fa-solid fa-user zeekerblue"></i>
+    </a>
+  </div>
 
   <!--	Javascript for the opening and the closing of the hamburger navigation-bar -->
   <script>
@@ -174,11 +217,15 @@
 </div>
 
 <!-- Homepage for phone-version - only visible on phone -->
-<div class="container-fluid d-sm-block d-lg-none d-md-none">
+<div class="container-fluid homepage d-sm-block d-lg-none d-md-none p-0">
   <!--	Same "forside"-background, but in phone-version - therefor smaller in size -->
-  <img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: fill">
+  <!--	<img class="homepage-background" src="images/forside-background-blur.png">-->
+  <img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: cover" width="100%" height="100%" ; >
+
+  <h2 class="hej">Hej</h2>
 
 </div>
+
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>FORSIDE - Zeeker</title>
+	<title>Opret opgave - Zeeker</title>
 
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
 
+	<link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/ml.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +20,7 @@
 <body>
 
 <!-- Navigation menu - visible on desktop and tablet - not visible on phone-->
-<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block">
+<div class="container-fluid forside-background d-none d-lg-block d-md-block">
 	<div class="sidenav text-center ">
 
 		<div class="forside justify-content-center d-flex">
@@ -36,13 +37,13 @@
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around house-icon -->
 				<a class="rounded-button" href="index.html">
-					<i class="fa-solid fa-house zeekeryellow"></i>
+					<i class="fa-solid fa-house zeekerblue"></i>
 				</a>
 			</div>
-			<!--			Link-tag for index.html -->
+			<!--			Link-tag -->
 			<a class="p-2" href="index.html">
 				<!--				Text under button (in Zeeker-yellow-color) -->
-				<p class="zeekeryellow page"><strong>Forside</strong></p>
+				<p class="zeekerblue page">Forside</p>
 			</a>
 		</div>
 
@@ -50,14 +51,14 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around plus-icon -->
-				<a class="rounded-button" href="addtask1.html">
-					<i class="fa-solid fa-plus zeekerblue"></i>
+				<a class="rounded-button" href="addtask.html">
+					<i class="fa-solid fa-plus zeekeryellow"></i>
 				</a>
 			</div>
-			<!--			Link-tag for addtask.html -->
-			<a class="p-2" href="addtask1.html">
+			<!--			Link-tag -->
+			<a class="p-2" href="addtask.html">
 				<!--				Text under button -->
-				<p class="zeekerblue page">Opret opgave</p>
+				<p class="zeekeryellow page"><strong>Opret opgave</strong></p>
 			</a>
 		</div>
 
@@ -69,7 +70,7 @@
 					<i class="fa-solid fa-info zeekerblue"></i>
 				</a>
 			</div>
-			<!--			Link-tag for aboutus.html -->
+			<!--			Link-tag -->
 			<a class="p-2" href="aboutus.html">
 				<!--				Text under button -->
 				<p class="zeekerblue page">Om os</p>
@@ -84,7 +85,7 @@
 					<i class="fa-solid fa-user zeekerblue"></i>
 				</a>
 			</div>
-			<!--			Link-tag for login.html -->
+			<!--			Link-tag -->
 			<a class="p-2" href="login.html">
 				<!--				Text under button -->
 				<p class="zeekerblue page">Log ind</p>
@@ -95,8 +96,8 @@
 		<div class="socialmedia p-1 justify-content-center d-flex">
 			<!--			Facebook-icon -->
 			<div class="facebook px-3">
-				<!--				Link-tag for Facebook -->
-				<a class="px-3" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
+				<!--				Link-tag -->
+				<a class="px-3" href="https://www.facebook.com/zeekerdk/" target="_blank">
 					<i class="fa-brands fa-facebook zeekerblue"></i>
 				</a>
 
@@ -105,59 +106,113 @@
 
 			<!--			Linkedin-icon -->
 			<div class="linkedin px-3">
-				<!--				Link-tag for Linkedin -->
+				<!--				Link-tag -->
 				<a class="px-3" href="https://www.linkedin.com/company/zeekerdk/?originalSubdomain=dk" target="_blank">
 					<i class="fa-brands fa-linkedin zeekerblue"></i>
 				</a>
 			</div>
 		</div>
-
 	</div>
 
 	<!--	Background-picture on homepage/forside -->
-
-
-	<div class="container-fluid border-none">
-		<div class="row">
-			<div class="main d-block text-center">
-				<div class="banner position-relative">
-					<div class="main-forsidebackg">
-						<img src="images/forside-background-blur.png">
+	<div class="main d-block p-5">
+		<h1 class="text-center p-5">OPRET OPGAVE</h1>
+		<div class="container-fluid ">
+			<form>
+				<div class="row m-5">
+					<div class="col-md-12 pb-4">
+						<button onclick="window.location.href='addtask.html'" class="knap2">Erhverv</button>
+						<button onclick="window.location.href=''" class="knap1">Privat</button>
 					</div>
-
-
-					<div class="forside-h1 text-white zeekeryellow">HÅNDVÆRKERSIDEN</div>
-					<div class="knapper">
-						<div class="wrapper1 justify-content-center d-flex text-white p-2">
-							<h2 class="h2-button p-3">Mangler du hjælp til at <br> udføre dit arbejde? <br> Så opret en opgave</h2>
-							<h2 class="h2-button p-3">Få hjælp af mere end <br> 17.000 medlemmer på <br> vores Facebook-side </h2>
-						</div>
-						<div class="wrapper2 justify-content-center d-flex ">
-							<a href="addtask.html">
-								<button class="button-text zeekerblue">Opret opgave</button>
-							</a>
-							<a href="https://www.facebook.com/groups/740535275977723/" target="_blank">
-								<button class="button-text-facebook zeekeryellow">Besøg Facebook</button>
-							</a>
+					<h2 class="pb-4">KONTAKTINFO</h2>
+					<div class="col-12 pb-4">
+						<h4>Dit fulde navn <span>*</span></h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" placeholder="Indtast dit fulde navn" name="name" id='name' required />
+							<label for="name" class="form__label">Indtast dit fulde navn</label>
 						</div>
 					</div>
-
-
-
-
+					<div class="col-12 pb-4">
+						<h4>E-mail adresse <span>*</span></h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" name="name" id='name1' required />
+							<label for="name1" class="form__label">Indtast din email - som IKKE er synlig for håndværkerne</label>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 pb-4">
+						<h4>Adresse</h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name3' required />
+							<label for="name3" class="form__label">Indtast din virksomheds navn</label>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 pb-4">
+						<h4>Postnummer <span>*</span></h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" type="number" placeholder="Indtast postnummer" inputmode="numeric" name="zip" id='zip' required />
+							<label for="zip" class="form__label">Indtast postnummer</label>
+						</div>
+					</div>
+					<h2 class="pb-4 pt-4">OPGAVEBESKRIVELSE</h2>
+					<div class="col-12 pb-4">
+						<h4>Kort beskrivelse <span>*</span></h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name5' required />
+							<label for="name5" class="form__label">Eksempel: Nyt badeværelse på 6 kvm</label>
+						</div>
+					</div>
+					<div class="col-12 pb-4">
+						<h4>Fuld beskrivelse <span>*</span></h4>
+						<div class="form__group field">
+							<textarea class="form-control textarea" id="exampleFormControlTextarea3" placeholder="Giv en uddybende forklaring på hvad der skal laves" rows="7"></textarea>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 pb-4">
+						<h4>Fagområde</h4>
+						<div class="form__group field">
+							<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name6' required>
+								<option value="">Vælg her</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12 pb-4">
+						<h4 class="pb-4">Billeder og dokumenter</h4>
+						<div class="drag-area">
+							<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+							<header>Træk og Slip</header>
+							<span>(eller)</span>
+							<button>Vælg filer</button>
+							<input type="file" hidden>
+						</div>
+					</div>
+					<h2 class="pb-4 pt-4">PRIS</h2>
+					<div class="col-12 col-md-6 pb-4">
+						<h4>Budget</h4>
+						<div class="form__group field">
+							<input type="input" class="form__field" placeholder="Evt. budget (kr. Inkl. moms)" name="name" id='name10' required />
+							<label for="name10" class="form__label">Evt. budget (kr. Inkl. moms)</label>
+						</div>
+					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
-
 </div>
+</div>
+
+
 
 <!-- Hamburger navigation-menu (full screen) - visible on phone - not visible on desktop or tablet -->
 <div class="container-fluid disabled d-lg-none d-md-none d-sm-block zeeker-gray navbar shadow-sm">
 	<!--	Zeeker-blue overlay-box -->
 	<div id="myNav" class="overlay">
 		<!--		The white cross-icon - svg-file -->
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 40%; color: white; !important; "></a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/white-cross.svg" style="width: 35%; color: white; !important; "></a>
 		<div class="overlay-content">
 			<!--			Text-links on hamburger navigation-menu -->
 			<a class="zeekeryellow" href="index.html"><strong>Forside</strong></a>
@@ -211,6 +266,7 @@
 	<h2 class="hej">Hej</h2>
 
 </div>
+
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

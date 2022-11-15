@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+
+	<title>Opret opgave - Zeeker</title>
+
+	<meta name="robots" content="All">
+	<meta name="author" content="Udgiver">
+	<meta name="copyright" content="Information om copyright">
+
+	<link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<h1 class="text-center p-5">OPRET OPGAVE</h1>
+<div class="container-fluid ">
+	<form>
+		<div class="row m-sm-5">
+			<div class="col-md-6 pb-4">
+				<button onclick="window.location.href=''" class="knap1">Erhverv</button>
+				<button onclick="window.location.href='addtask1.html'" class="knap2">Privat</button>
+			</div>
+			<h2 class="pb-4">KONTAKTINFO</h2>
+			<div class="col-12 pb-4">
+				<h4>Dit fulde navn <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" placeholder="Indtast dit fulde navn" name="name" id='name' required />
+					<label for="name" class="form__label">Indtast dit fulde navn</label>
+				</div>
+			</div>
+			<div class="col-12 pb-4">
+				<h4>E-mail adresse <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" name="name" id='name1' required />
+					<label for="name1" class="form__label">Indtast din email - som IKKE er synlig for håndværkerne</label>
+				</div>
+			</div>
+			<div class="col-12 pb-4">
+				<h4>Postnummer <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" type="number" placeholder="Indtast postnummer" inputmode="numeric" name="zip" id='zip' required />
+					<label for="zip" class="form__label">Indtast postnummer</label>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>Virksomhedsnavn <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name3' required />
+					<label for="name3" class="form__label">Indtast din virksomheds navn</label>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>CVR <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" placeholder="Indtast din virksomheds CVR" inputmode="numeric" name="name" id='cvr' required />
+					<label for="cvr" class="form__label">Indtast din virksomheds CVR</label>
+				</div>
+			</div>
+			<h2 class="pb-4 pt-4">OPGAVEBESKRIVELSE</h2>
+			<div class="col-12 pb-4">
+				<h4>Kort beskrivelse <span>*</span></h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name5' required />
+					<label for="name5" class="form__label">Eksempel: Nyt badeværelse på 6 kvm</label>
+				</div>
+			</div>
+			<div class="col-12 pb-4">
+				<h4>Fuld beskrivelse <span>*</span></h4>
+				<div class="form__group field">
+					<textarea class="form-control textarea" id="exampleFormControlTextarea3" placeholder="Giv en uddybende forklaring på hvad der skal laves" rows="7"></textarea>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>Fagområde <span>*</span></h4>
+				<div class="form__group field">
+					<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name6' required>
+						<option value="">Vælg her</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>Kompetencer</h4>
+				<div class="form__group field">
+					<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name7' required>
+						<option value="">Vælg her</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12 pb-4">
+				<h4 class="pb-4">Billeder og dokumenter</h4>
+				<div class="drag-area">
+					<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+					<header>Træk og Slip</header>
+					<span>(eller)</span>
+					<button>Vælg filer</button>
+					<input type="file" hidden>
+				</div>
+			</div>
+			<h2 class="pb-4 pt-4">TID OG PRIS</h2>
+			<div class="col-12 col-md-6  pb-4">
+				<h4>Ansøgningsfrist <span>*</span></h4>
+				<div class="form__group field">
+					<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name8' required>
+						<option value="">Vælg her</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>Arbejdsperiode</h4>
+				<div class="form__group field">
+					<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name9' required>
+						<option value="">Vælg her</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 pb-4">
+				<h4>Budget</h4>
+				<div class="form__group field">
+					<input type="input" class="form__field" placeholder="Evt. budget (kr. Inkl. moms)" name="name" id='name10' required />
+					<label for="name10" class="form__label">Evt. budget (kr. Inkl. moms)</label>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+<div class="container">
+	<h1 class="text-center titel p-3">OM HÅNDVÆRKERSIDEN</h1>
+	<div class="row d-flex justify-content-evenly align-items-end align-items-md-center flex-row-reverse">
+		<div class="col-md-6 col-sm-11 box1 mt-3	">
+			<p class="lille_tekst pt-md-4 m-4 pb-1">
+				Håndværkersiden er et fællesskab bestående af ca. 17.000 håndværkere
+				der dagligt sparer med hinanden og rådgiver kunder.
+				<br><br>
+				I vores netværk er der ingen mellemmand, som gør det dyrere
+				for håndværkerne og kunderne at aftale priser.
+				<br><br>
+				På Håndværkersiden.dk formidler vi ganske
+				simpelt kontakt mellem håndværkere og kunder.
+				<br><br>
+				Det gør det nemt for kunden at finde
+				en ledig håndværker med de rette kompetencer,
+				og nemt for håndværkeren at finde arbejde.
+				<br><br>
+			</p>
+			<button class="knap3 text-center m-4">Opret opgave</button>
+		</div>
+
+
+		<!-- Ydre Boks -->
+		<div class="col-md-6 mt-md-5 pb-2">
+			<div class="row">
+				<!-- Billede -->
+				<img class="d-none d-lg-block" src="images/Group%2058.png" alt="">
+				<img class="d-lg-none" src="images/mobil_håndværker.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-5">
+	<h1 class="text-center titel mb-5">LOG IND</h1>
+	<div class="row d-flex justify-content-center">
+		<div class="col-12 pb-4 input w-50">
+			<h4>E-mail adresse</h4>
+			<div class="form__group field">
+				<input type="input" class="form__field" type="email" placeholder="E-mail" name="name" id='name13' required />
+				<label for="name1" class="form__label">E-mail</label>
+			</div>
+		</div>
+	</div>
+	<div class="row d-flex justify-content-center">
+		<div class="col-12 pb-4 input w-50">
+			<h4>Adgangskode</h4>
+			<div class="form__group field">
+				<input type="input" class="form__field" type="password" placeholder="Adgangskode" name="name" id='name14' required />
+				<label for="name1" class="form__label">Adgangskode</label>
+			</div>
+		</div>
+	</div>
+	<div class="container d-flex justify-content-center">
+		<button class="knap4 w-50 text-center mt-3">Log ind</button>
+	</div>
+	<div class="container d-flex justify-content-evenly mt-3 mb-5">
+		<a href="#" class="text-decoration-underline">Glemt din adgangskode?</a>
+		<a href="#" class="text-decoration-underline">Opret konto</a>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

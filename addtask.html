@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/ml.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +21,7 @@
 <body>
 
 <!-- Navigation menu - visible on desktop and tablet - not visible on phone-->
-<div class="container-fluid forside-background d-none d-lg-block d-md-block">
+<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block">
   <div class="sidenav text-center ">
 
     <div class="forside justify-content-center d-flex">
@@ -28,7 +29,6 @@
       <a class="rounded-button-logo" href="#">
         <!--				Logo -->
         <h2 class="mt-5 logo zeekerblue">LOGO</h2>
-
       </a>
     </div>
 
@@ -41,7 +41,7 @@
           <i class="fa-solid fa-house zeekerblue"></i>
         </a>
       </div>
-      <!--			Link-tag -->
+      <!--			Link-tag for index.html -->
       <a class="p-2" href="index.html">
         <!--				Text under button (in Zeeker-yellow-color) -->
         <p class="zeekerblue page">Forside</p>
@@ -52,12 +52,12 @@
     <div class="forside pt-2">
       <div class="justify-content-center d-flex">
         <!--				Round button + link around plus-icon -->
-        <a class="rounded-button" href="addtask.html">
+        <a class="rounded-button" href="addtask1.html">
           <i class="fa-solid fa-plus zeekeryellow"></i>
         </a>
       </div>
-      <!--			Link-tag -->
-      <a class="p-2" href="addtask.html">
+      <!--			Link-tag for addtask.html -->
+      <a class="p-2" href="addtask1.html">
         <!--				Text under button -->
         <p class="zeekeryellow page"><strong>Opret opgave</strong></p>
       </a>
@@ -71,7 +71,7 @@
           <i class="fa-solid fa-info zeekerblue"></i>
         </a>
       </div>
-      <!--			Link-tag -->
+      <!--			Link-tag for aboutus.html -->
       <a class="p-2" href="aboutus.html">
         <!--				Text under button -->
         <p class="zeekerblue page">Om os</p>
@@ -86,19 +86,18 @@
           <i class="fa-solid fa-user zeekerblue"></i>
         </a>
       </div>
-      <!--			Link-tag -->
+      <!--			Link-tag for login.html -->
       <a class="p-2" href="login.html">
         <!--				Text under button -->
         <p class="zeekerblue page">Log ind</p>
       </a>
     </div>
 
-    <!--	Social media-icons (only visible on desktop)	-->
-    <div class="socialmedia p-1 justify-content-center d-flex">
+    <div class="socialmedia justify-content-center d-flex">
       <!--			Facebook-icon -->
       <div class="facebook px-3">
-        <!--				Link-tag -->
-        <a class="px-3" href="https://www.facebook.com/zeekerdk/" target="_blank">
+        <!--				Link-tag for Facebook -->
+        <a class="px-3" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
           <i class="fa-brands fa-facebook zeekerblue"></i>
         </a>
 
@@ -106,17 +105,21 @@
       </div>
 
       <!--			Linkedin-icon -->
-      <div class="linkedin px-3">
-        <!--				Link-tag -->
-        <a class="px-3" href="https://www.linkedin.com/company/zeekerdk/?originalSubdomain=dk" target="_blank">
-          <i class="fa-brands fa-linkedin zeekerblue"></i>
-        </a>
-      </div>
+      <!--			<div class="linkedin px-3">-->
+      <!--&lt;!&ndash;				Link-tag for Linkedin &ndash;&gt;-->
+      <!--				<a class="px-3" href="https://www.linkedin.com/company/zeekerdk/?originalSubdomain=dk" target="_blank">-->
+      <!--					<i class="fa-brands fa-linkedin zeekerblue"></i>-->
+      <!--				</a>-->
+      <!--			</div>-->
+    </div>
+    <!--		Zeeker-logo -->
+    <div class="zeeker-logo justify-content-center d-flex">
+      <img src="images/zeeker-logo.png" style="width: 30%; padding-bottom: 1px; padding-top: 1px">
     </div>
 
   </div>
 
-  <!--	Background-picture on homepage/forside -->
+  <!--	Opret opgave -->
   <div class="main d-block p-5">
     <h1 class="text-center p-5">OPRET OPGAVE</h1>
     <div class="container-fluid ">
@@ -296,9 +299,126 @@
 <div class="container-fluid homepage d-sm-block d-lg-none d-md-none p-0">
   <!--	Same "forside"-background, but in phone-version - therefor smaller in size -->
   <!--	<img class="homepage-background" src="images/forside-background-blur.png">-->
-  <img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: cover" width="100%" height="100%" ; >
-
-  <h2 class="hej">Hej</h2>
+  <!--	Opret opgave -->
+    <h1 class="text-center p-5">OPRET OPGAVE</h1>
+    <div class="container-fluid ">
+      <form>
+        <div class="row m-5">
+          <div class="col-md-6 pb-4">
+            <button onclick="window.location.href=''" class="knap1">Erhverv</button>
+            <button onclick="window.location.href='addtask1.html'" class="knap2">Privat</button>
+          </div>
+          <h2 class="pb-4">KONTAKTINFO</h2>
+          <div class="col-12 pb-4">
+            <h4>Dit fulde navn <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Indtast dit fulde navn" name="name" id='name' required />
+              <label for="name" class="form__label">Indtast dit fulde navn</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>E-mail adresse <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" name="name" id='name1' required />
+              <label for="name1" class="form__label">Indtast din email - som IKKE er synlig for håndværkerne</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>Postnummer <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" type="number" placeholder="Indtast postnummer" inputmode="numeric" name="zip" id='zip' required />
+              <label for="zip" class="form__label">Indtast postnummer</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pb-4">
+            <h4>Virksomhedsnavn <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name3' required />
+              <label for="name3" class="form__label">Indtast din virksomheds navn</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pb-4">
+            <h4>CVR <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Indtast din virksomheds CVR" inputmode="numeric" name="name" id='cvr' required />
+              <label for="cvr" class="form__label">Indtast din virksomheds CVR</label>
+            </div>
+          </div>
+          <h2 class="pb-4 pt-4">OPGAVEBESKRIVELSE</h2>
+          <div class="col-12 pb-4">
+            <h4>Kort beskrivelse <span>*</span></h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name5' required />
+              <label for="name5" class="form__label">Eksempel: Nyt badeværelse på 6 kvm</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>Fuld beskrivelse <span>*</span></h4>
+            <div class="form__group field">
+              <textarea class="form-control textarea" id="exampleFormControlTextarea3" placeholder="Giv en uddybende forklaring på hvad der skal laves" rows="7"></textarea>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pb-4">
+            <h4>Fagområde <span>*</span></h4>
+            <div class="form__group field">
+              <select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name6' required>
+                <option value="">Vælg her</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4 class="pb-4">Billeder og dokumenter</h4>
+            <div class="drag-area">
+              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+              <header>Træk og Slip</header>
+              <span>(eller)</span>
+              <button>Vælg filer</button>
+              <input type="file" hidden>
+            </div>
+          </div>
+          <h2 class="pb-4 pt-4">TID OG PRIS</h2>
+          <div class="col-12 col-md-6  pb-4">
+            <h4>Ansøgningsfrist <span>*</span></h4>
+            <div class="form__group field">
+              <select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name8' required>
+                <option value="">Vælg her</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pb-4">
+            <h4>Arbejdsperiode</h4>
+            <div class="form__group field">
+              <select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name9' required>
+                <option value="">Vælg her</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pb-4">
+            <h4>Budget</h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Evt. budget (kr. Inkl. moms)" name="name" id='name10' required />
+              <label for="name10" class="form__label">Evt. budget (kr. Inkl. moms)</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
 
 </div>
 

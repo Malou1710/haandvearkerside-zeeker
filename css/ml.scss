@@ -78,12 +78,13 @@ a{
 
 // Links for the text on 'overlay'
 .overlay a {
-  padding: 8px;
+  padding: 5px;
   text-decoration: none;
   font-size: 40px;
   color: white;
   display: block;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 //
@@ -134,7 +135,7 @@ a{
 }
 
 .sidenav a {
-  padding: 17px;
+  padding-top: 10px;
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -169,8 +170,8 @@ a{
 //	background-size: cover;
 //}
 .rounded-button{
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -342,7 +343,7 @@ a{
   margin: 0 auto;
   width: 300px;
   font-family: Raleway, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bolder;
 
 }
@@ -401,19 +402,67 @@ button{
   border-radius: 5px;
 }
 
+// PHONE VERSION OF HOMEPAGE
 
-// customized scrollbar on all four pages
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
+// background on homepage
+.homepage-background{
+  background-image: url(../images/forside-background-blur.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 90vh;
+  position: absolute;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: black;
+//The two buttons
+.knapper{
+  font-family: Raleway, sans-serif;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #F7F7F7;
+// The big text
+.sm-maintext{
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-left: -20px;
+  padding: 40px
+}
+
+// Yellow 'Opret opgave'/add task-button
+.sm-opgave-buttons{
+  padding: 10px 40px;
+  background-color: #F0B713;
+  color:  #395374;
+  margin-left: 50px;
+}
+// Blue Facebook-button
+.sm-facebook-buttons{
+  padding: 10px 40px;
+  background-color: #395374;
+  color: #F0B713;
+  margin-left: 40px;
+}
+// Text in 'Opret opgave'-button
+.sm-knap1{
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+}
+// Text in Facebook-button
+.sm-knap2{
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+}
+
+.page-logo{
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.pic{
+  object-fit: cover;
 }

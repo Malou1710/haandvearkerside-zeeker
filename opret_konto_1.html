@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Om håndværkersiden</title>
+  <title>Opret opgave - Zeeker</title>
 
   <meta name="robots" content="All">
   <meta name="author" content="Udgiver">
@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="css/ml.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,6 +28,7 @@
       <a class="rounded-button-logo" href="#">
         <!--				Logo -->
         <h2 class="mt-5 logo zeekerblue">LOGO</h2>
+
       </a>
     </div>
 
@@ -53,13 +53,13 @@
       <div class="justify-content-center d-flex">
         <!--				Round button + link around plus-icon -->
         <a class="rounded-button" href="addtask.html">
-          <i class="fa-solid fa-plus zeekerblue"></i>
+          <i class="fa-solid fa-plus zeekeryellow"></i>
         </a>
       </div>
       <!--			Link-tag -->
       <a class="p-2" href="addtask.html">
         <!--				Text under button -->
-        <p class="zeekerblue page">Oprer opgave</p>
+        <p class="zeekeryellow page"><strong>Opret opgave</strong></p>
       </a>
     </div>
 
@@ -68,13 +68,13 @@
       <div class="justify-content-center d-flex">
         <!--				Round button + link around info-icon -->
         <a class="rounded-button" href="aboutus.html">
-          <i class="fa-solid fa-info zeekeryellow"></i>
+          <i class="fa-solid fa-info zeekerblue"></i>
         </a>
       </div>
       <!--			Link-tag -->
       <a class="p-2" href="aboutus.html">
         <!--				Text under button -->
-        <p class="zeekeryellow page"><strong>Om os</strong></p>
+        <p class="zeekerblue page">Om os</p>
       </a>
     </div>
 
@@ -119,43 +119,62 @@
 
   </div>
 
-  <!--	Om os delen -->
-  <div class="main d-block">
-    <div class=" container">
-      <h1 class="text-center p-3">OM HÅNDVÆRKERSIDEN</h1>
-      <div class="row d-flex justify-content-evenly align-items-end align-items-md-center flex-row-reverse">
-        <div class="col-md-6 box1 mt-3 pt-5">
-          <h2>Hvad er Håndværkersiden?</h2>
-          <p class="lille_tekst pt-5 pb-1">
-            Håndværkersiden er et fællesskab bestående af ca. 17.000 håndværkere
-            der dagligt sparer med hinanden og rådgiver kunder.
-            <br><br>
-            I vores netværk er der ingen mellemmand, som gør det dyrere
-            for håndværkerne og kunderne at aftale priser.
-            <br><br>
-            På Håndværkersiden.dk formidler vi ganske
-            simpelt kontakt mellem håndværkere og kunder.
-            <br><br>
-            Det gør det nemt for kunden at finde
-            en ledig håndværker med de rette kompetencer,
-            og nemt for håndværkeren at finde arbejde.
-            <br><br>
-            </p>
-            <button class="knap3 text-center mb-5">Opret opgave</button>
-        </div>
-
-        <!-- Ydre Boks -->
-        <div class=" col-md-6 mt-5 pb-2 ">
-          <div class="mt-2 p-3 mb-2 row">
-            <!-- Billede -->
-            <img class="d-none d-lg-block m-3" src="images/Group%2058.png" alt="">
-            <img class="d-lg-none m-3" src="images/mobil_håndværker.png" alt="">
+  <!--	Opret opgave -->
+  <div class="main d-block p-5">
+    <!-- Opret Konto Privat -->
+    <h1 class="text-center p-5">OPRET KONTO</h1>
+    <div class="container-fluid">
+      <form>
+        <div class="row m-sm-5">
+          <div class="col-md-6 pb-4">
+            <button onclick="window.location.href='opret_konto.html'" class="knap2">Erhverv</button>
+            <button onclick="window.location.href=''" class="knap1">Privat</button>
+          </div>
+          <div class=" col-12 pb-4">
+            <h4>Fornavn</h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Indtast dit fulde navn" name="name" id='name' required />
+              <label for="name" class="form__label">Fornavn</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>Efternavn</h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" name="name" id='name21' required />
+              <label for="name" class="form__label">Indtast din email - som IKKE er synlig for håndværkerne</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>E-mail</h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" inputmode="numeric" name="zip" id='zip1' required />
+              <label for="zip1" class="form__label">E-mail</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <h4>Adgangskode</h4>
+            <div class="form__group field">
+              <input type="input" class="form__field" placeholder="Adgangskode" name="name" id='name22' required />
+              <label for="name22" class="form__label">Adgangskode</label>
+            </div>
+          </div>
+          <div class="col-12 pb-4">
+            <div class="">
+              <input type="checkbox" id="check" name="check">
+              <label class="d-inline check" for="check">Jeg ønsker at Håndværkersiden sender mails til mig
+                angående fremtidige opgaver.</label>
+            </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <button class="knap4 w-50 text-center mt-3">Opret konto</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
+
+
 
 <!-- Hamburger navigation-menu (full screen) - visible on phone - not visible on desktop or tablet -->
 <div class="container-fluid disabled d-lg-none d-md-none d-sm-block zeeker-gray navbar shadow-sm">
@@ -216,7 +235,6 @@
   <h2 class="hej">Hej</h2>
 
 </div>
-
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

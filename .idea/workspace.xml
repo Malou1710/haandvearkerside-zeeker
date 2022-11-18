@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3057401b-36fb-4e97-8e8a-5da54eec8847" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/forside-background1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zeeker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addtask.html" beforeDir="false" afterPath="$PROJECT_DIR$/addtask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addtask1.html" beforeDir="false" afterPath="$PROJECT_DIR$/addtask1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ml.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ml.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/ml.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ml.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/ml.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kkff.html" beforeDir="false" afterPath="$PROJECT_DIR$/kkff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opret_konto.html" beforeDir="false" afterPath="$PROJECT_DIR$/opret_konto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opret_konto_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/opret_konto_1.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Hcsy2Z7sX0mbJ3zlyMWeUx8oTz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/sigurddam&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\haandvearkerside-zeeker\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="sass" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="sass" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.sass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3057401b-36fb-4e97-8e8a-5da54eec8847" name="Changes" comment="" />
+      <created>1668595956488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668595956488</updated>
+      <workItem from="1668595958180" duration="9626000" />
+      <workItem from="1668669474862" duration="13920000" />
+      <workItem from="1668683714940" duration="3039000" />
+      <workItem from="1668689196890" duration="7521000" />
+      <workItem from="1668725095810" duration="847000" />
+      <workItem from="1668761313933" duration="5295000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

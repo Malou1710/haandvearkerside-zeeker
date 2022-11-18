@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="https://use.typekit.net/dcl8jzn.css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<link href="css/ml.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/b7f7f27b49.js" crossorigin="anonymous"></script>
 
@@ -19,21 +20,24 @@
 
 <body>
 
-<!-- Navigation menu - visible on desktop - not visible on phone-->
-<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block">
+<!-- Navigation menu - visible on desktop and tablet - not visible on phone-->
+<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block p-0">
 	<div class="sidenav text-center ">
 
 		<div class="forside justify-content-center d-flex">
-			<!--			Round circle around logo -->
-			<img class="page-logo" src="images/haandvaerkersiden.png">
+			<div class="forside justify-content-center d-flex">
+				<!--			Round circle around logo -->
+				<img class="page-logo" src="images/haandvaerkersiden.png">
+			</div>
 		</div>
 
+		</p>
 		<!--		Homepage / Forside - whole "forside"-class is linked to the same - buttons turns a bit grey if mouse touches the button -->
 		<div class="forside pt-4 ">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around house-icon -->
-				<a class="rounded-button" href="index.html">
-					<i class="fa-solid fa-house zeekeryellow"></i>
+				<a class="rounded-button justify-content-center d-flex" href="index.html">
+					<i class="fa-solid fa-house zeekeryellow icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for index.html -->
@@ -47,8 +51,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around plus-icon -->
-				<a class="rounded-button" href="addtask1.html">
-					<i class="fa-solid fa-plus zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="addtask1.html">
+					<i class="fa-solid fa-plus zeekerblue icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for addtask.html -->
@@ -62,8 +66,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around info-icon -->
-				<a class="rounded-button" href="aboutus.html">
-					<i class="fa-solid fa-info zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="aboutus.html">
+					<i class="fa-solid fa-info zeekerblue icon_sociale "></i>
 				</a>
 			</div>
 			<!--			Link-tag for aboutus.html -->
@@ -77,8 +81,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around profile-icon -->
-				<a class="rounded-button" href="login.html">
-					<i class="fa-solid fa-user zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="login.html">
+					<i class="fa-solid fa-user zeekerblue icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for login.html -->
@@ -88,13 +92,12 @@
 			</a>
 		</div>
 
-		<!--	Social media-icons (only visible on desktop)	-->
 		<div class="socialmedia justify-content-center d-flex">
 			<!--			Facebook-icon -->
 			<div class="facebook px-3">
 				<!--				Link-tag for Facebook -->
-				<a class="px-3" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
-					<i class="fa-brands fa-facebook zeekerblue"></i>
+				<a class="px-3 justify-content-center d-flex" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
+					<i class="fa-brands fa-facebook zeekerblue icon_sociale "></i>
 				</a>
 
 
@@ -109,50 +112,22 @@
 			<!--			</div>-->
 		</div>
 		<!--		Zeeker-logo -->
-		<div class="zeeker-logo justify-content-center d-flex ">
-			<img src="images/zeeker-logo.png" style="width: 30%; padding-bottom: 1px; padding-top: 1px;">
+		<div class="zeeker-logo justify-content-center d-flex">
+			<img class="" src="images/zeeker-logo.png" style="width: 30%; padding-bottom: 1px; padding-top: 1px">
 		</div>
+
+	</div>
+
+	<div class="imgbox p-0 m-0 ">
+	<img class="imgimg" src="images/forside-background1.png">
+	</div>
 
 	</div>
 
 	<!--	Background-picture on homepage/forside -->
 
 
-	<div class="container-fluid border-none">
-		<div class="row">
-			<div class="main d-block text-center">
-				<div class="banner position-relative">
-					<div class="main-forsidebackg d-lg-block d-sm-none">
-						<img class="main-forsidebackg-pic pic" src="images/forside-background-blur.png">
-					</div>
-					<div class="main-forsidebackg  d-lg-none d-lg-block">
-						<img class="main-forsidebackg-pic pic" src="images/forside-background-blur.png">
-					</div>
 
-
-					<div class="forside-h1 text-white zeekeryellow">HÅNDVÆRKERSIDEN</div>
-					<div class="knapper">
-						<div class="wrapper1 justify-content-center d-flex text-white p-2">
-							<h2 class="h2-button p-3">Mangler du hjælp til at <br> udføre dit arbejde? <br> Så opret en opgave</h2>
-							<h2 class="h2-button p-3">Få hjælp af mere end <br> 17.000 medlemmer på <br> vores Facebook-side </h2>
-						</div>
-						<div class="wrapper2 justify-content-center d-flex ">
-							<a href="addtask.html">
-								<button class="button-text zeekerblue">Opret opgave</button>
-							</a>
-							<a href="https://www.facebook.com/groups/740535275977723/" target="_blank">
-								<button class="button-text-facebook zeekeryellow">Besøg Facebook</button>
-							</a>
-						</div>
-					</div>
-
-
-
-
-				</div>
-			</div>
-		</div>
-	</div>
 
 </div>
 
@@ -208,30 +183,10 @@
 </div>
 
 <!-- Homepage for phone-version - only visible on phone -->
-<div class="container-fluid homepage homepage-background d-sm-block d-lg-none d-md-none p-0 text-white">
-	<!-- Big text -->
-	<h2 class="sm-maintext text-center zeekeryellow">HÅNDVÆRKERSIDEN</h2>
-	<!--	The two buttons-->
-	<div class="knapper position-relative p-5 pt-5">
-		<div>
-
-			<!--			Big paragraph text -->
-			<p class="text-center sm-knap1 mb-4">Mangler du hjælp til at <br> udføre dit arbejde? <br> Så opret en opgave </p>
-			<!--			Link-tag for the 'Opret opgave'/add task-button -->
-			<a href="addtask.html">
-				<button class="sm-opgave-buttons border-0" type="button">Opret opgave</button>
-			</a>
-		</div>
-		<div class="mt-5">
-			<!--			Big paragraph text -->
-			<p class="text-center sm-knap2 mb-4">Få hjælp af mere end <br> 17.000 medlemmer på vores Facebook-side </p>
-			<!--			Link-tag for the Facebook-button-->
-			<a href="#">
-				<button class="sm-facebook-buttons border-0" type="button">Besøg Facebook</button>
-			</a>
-		</div>
+<div class="container-fluid homepage homepage-background pic1 d-sm-block d-lg-none d-md-none p-0 text-white">
+	<div class="container-fluid p-0">
+		<img class="pic1" src="images/forside-background1.png">
 	</div>
-
 </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

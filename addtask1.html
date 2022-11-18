@@ -21,15 +21,14 @@
 <body>
 
 <!-- Navigation menu - visible on desktop and tablet - not visible on phone-->
-<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block">
+<div class="container-fluid user-select-none forside-background d-none d-lg-block d-md-block p-0">
 	<div class="sidenav text-center ">
 
 		<div class="forside justify-content-center d-flex">
-			<!--			Round circle around logo -->
-			<a class="rounded-button-logo" href="#">
-				<!--				Logo -->
-				<h2 class="mt-5 logo zeekerblue">LOGO</h2>
-			</a>
+			<div class="forside justify-content-center d-flex">
+				<!--			Round circle around logo -->
+				<img class="page-logo" src="images/haandvaerkersiden.png">
+			</div>
 		</div>
 
 		</p>
@@ -37,8 +36,8 @@
 		<div class="forside pt-4 ">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around house-icon -->
-				<a class="rounded-button" href="index.html">
-					<i class="fa-solid fa-house zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="index.html">
+					<i class="fa-solid fa-house zeekerblue icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for index.html -->
@@ -52,8 +51,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around plus-icon -->
-				<a class="rounded-button" href="addtask1.html">
-					<i class="fa-solid fa-plus zeekeryellow"></i>
+				<a class="rounded-button justify-content-center d-flex" href="addtask1.html">
+					<i class="fa-solid fa-plus zeekeryellow icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for addtask.html -->
@@ -67,8 +66,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around info-icon -->
-				<a class="rounded-button" href="aboutus.html">
-					<i class="fa-solid fa-info zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="aboutus.html">
+					<i class="fa-solid fa-info zeekerblue icon_sociale "></i>
 				</a>
 			</div>
 			<!--			Link-tag for aboutus.html -->
@@ -82,8 +81,8 @@
 		<div class="forside pt-2">
 			<div class="justify-content-center d-flex">
 				<!--				Round button + link around profile-icon -->
-				<a class="rounded-button" href="login.html">
-					<i class="fa-solid fa-user zeekerblue"></i>
+				<a class="rounded-button justify-content-center d-flex" href="login.html">
+					<i class="fa-solid fa-user zeekerblue icon_sociale"></i>
 				</a>
 			</div>
 			<!--			Link-tag for login.html -->
@@ -97,8 +96,8 @@
 			<!--			Facebook-icon -->
 			<div class="facebook px-3">
 				<!--				Link-tag for Facebook -->
-				<a class="px-3" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
-					<i class="fa-brands fa-facebook zeekerblue"></i>
+				<a class="px-3 justify-content-center d-flex" href="https://www.facebook.com/groups/740535275977723/" target="_blank">
+					<i class="fa-brands fa-facebook zeekerblue icon_sociale "></i>
 				</a>
 
 
@@ -114,17 +113,16 @@
 		</div>
 		<!--		Zeeker-logo -->
 		<div class="zeeker-logo justify-content-center d-flex">
-			<img src="images/zeeker-logo.png" style="width: 30%; padding-bottom: 1px; padding-top: 1px">
+			<img class="" src="images/zeeker-logo.png" style="width: 30%; padding-bottom: 1px; padding-top: 1px">
 		</div>
 
 	</div>
-
 	<!--	Background-picture on homepage/forside -->
-	<div class="main d-block p-5">
-		<h1 class="text-center p-5">OPRET OPGAVE</h1>
+	<div class="main d-block m-0">
 		<div class="container-fluid ">
 			<form>
-				<div class="row m-5">
+				<div class="row ramme">
+					<h1 class="text-center p-5">OPRET OPGAVE</h1>
 					<div class="col-md-12 pb-4">
 						<button onclick="window.location.href='addtask.html'" class="knap2">Erhverv</button>
 						<button onclick="window.location.href=''" class="knap1">Privat</button>
@@ -207,8 +205,12 @@
 			</form>
 		</div>
 	</div>
+
+	</div>
+
+
 </div>
-</div>
+
 
 
 
@@ -264,11 +266,92 @@
 
 <!-- Homepage for phone-version - only visible on phone -->
 <div class="container-fluid homepage d-sm-block d-lg-none d-md-none p-0">
-	<!--	Same "forside"-background, but in phone-version - therefor smaller in size -->
-	<!--	<img class="homepage-background" src="images/forside-background-blur.png">-->
-	<img class="homepage-background" src="images/forside-background-blur.png" style="object-fit: cover" width="100%" height="100%" ; >
-
-	<h2 class="hej">Hej</h2>
+	<h1 class="text-center p-5">OPRET OPGAVE</h1>
+	<div class="container-fluid ">
+		<form>
+			<div class="row m-5">
+				<div class="col-md-12 pb-4">
+					<button onclick="window.location.href='addtask.html'" class="knap2">Erhverv</button>
+					<button onclick="window.location.href=''" class="knap1">Privat</button>
+				</div>
+				<h2 class="pb-4">KONTAKTINFO</h2>
+				<div class="col-12 pb-4">
+					<h4>Dit fulde navn <span>*</span></h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" placeholder="Indtast dit fulde navn" name="name" id='name' required />
+						<label for="name" class="form__label">Indtast dit fulde navn</label>
+					</div>
+				</div>
+				<div class="col-12 pb-4">
+					<h4>E-mail adresse <span>*</span></h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" type="email" placeholder="Indtast din email - som IKKE er synlig for håndværkerne" name="name" id='name1' required />
+						<label for="name1" class="form__label">Indtast din email - som IKKE er synlig for håndværkerne</label>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 pb-4">
+					<h4>Adresse</h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name3' required />
+						<label for="name3" class="form__label">Indtast din virksomheds navn</label>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 pb-4">
+					<h4>Postnummer <span>*</span></h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" type="number" placeholder="Indtast postnummer" inputmode="numeric" name="zip" id='zip' required />
+						<label for="zip" class="form__label">Indtast postnummer</label>
+					</div>
+				</div>
+				<h2 class="pb-4 pt-4">OPGAVEBESKRIVELSE</h2>
+				<div class="col-12 pb-4">
+					<h4>Kort beskrivelse <span>*</span></h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name5' required />
+						<label for="name5" class="form__label">Eksempel: Nyt badeværelse på 6 kvm</label>
+					</div>
+				</div>
+				<div class="col-12 pb-4">
+					<h4>Fuld beskrivelse <span>*</span></h4>
+					<div class="form__group field">
+						<textarea class="form-control textarea" id="exampleFormControlTextarea3" placeholder="Giv en uddybende forklaring på hvad der skal laves" rows="7"></textarea>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 pb-4">
+					<h4>Fagområde</h4>
+					<div class="form__group field">
+						<select type="input" class="form__field" placeholder="Indtast din virksomheds navn" name="name" id='name6' required>
+							<option value="">Vælg her</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-12 pb-4">
+					<h4 class="pb-4">Billeder og dokumenter</h4>
+					<div class="drag-area">
+						<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+						<header>Træk og Slip</header>
+						<span>(eller)</span>
+						<button>Vælg filer</button>
+						<input type="file" hidden>
+					</div>
+				</div>
+				<h2 class="pb-4 pt-4">PRIS</h2>
+				<div class="col-12 col-md-6 pb-4">
+					<h4>Budget</h4>
+					<div class="form__group field">
+						<input type="input" class="form__field" placeholder="Evt. budget (kr. Inkl. moms)" name="name" id='name10' required />
+						<label for="name10" class="form__label">Evt. budget (kr. Inkl. moms)</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
 </div>
 
